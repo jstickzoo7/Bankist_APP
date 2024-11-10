@@ -6,7 +6,7 @@
 
 // Data
 const account1 = {
-  owner: 'Jonas Schmedtmann',
+  owner: 'Awelewa James',
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
   interestRate: 1.2, // %
   pin: 1111,
@@ -26,7 +26,7 @@ const account1 = {
 };
 
 const account2 = {
-  owner: 'Jessica Davis',
+  owner: 'Oga Sigo',
   movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
   interestRate: 1.5,
   pin: 2222,
@@ -46,14 +46,14 @@ const account2 = {
 };
 
 const account3 = {
-  owner: 'Steven Thomas Williams',
+  owner: 'Damilare Alabi',
   movements: [200, -200, 340, -300, -20, 50, 400, -460],
   interestRate: 0.7,
   pin: 3333,
 };
 
 const account4 = {
-  owner: 'Sarah Smith',
+  owner: 'Steve Kush',
   movements: [430, 1000, 700, 50, 90],
   interestRate: 1,
   pin: 4444,
@@ -114,12 +114,12 @@ btnLogin.addEventListener('click', function (e) {
   e.preventDefault();
 
   labelDate.textContent = new Intl.DateTimeFormat(navigator.locale, {
-    day: "2-digit",
+    day: '2-digit',
     month: '2-digit',
-    year:'numeric',
+    year: 'numeric',
     hour: '2-digit',
-    minute: '2-digit'
-  }).format(new Date()) ;
+    minute: '2-digit',
+  }).format(new Date());
 
   currentAccount = accounts.find(
     acc => inputLoginUsername.value === acc.username
